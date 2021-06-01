@@ -1,10 +1,14 @@
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom'
 
+//Imports pages
+import login from './pages/login'
 
-function App() {
+function App(){
   return (
-    <div className="container">
-      <h1>FoodShare</h1>
-    </div>
+    <Router>
+      <Route path='/' component={login} />
+    </Router>
   );
 }
 
